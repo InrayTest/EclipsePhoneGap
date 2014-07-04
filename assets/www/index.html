@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+   <style>
+  body {
+    background: #ff0;
+  }
+   div#main {
+     background: #ccf;
+     height: 600px;
+     width: 360px;
+     padding: 5px;
+     -webkit-border-radius: 5px;
+}
+</style>
+   <title>Einfache Android-App</title>
+   <script>
+  document.addEventListener("DOMContentLoaded", function () {
+   alert("PhoneGap ist eine tolle Lösung!")
+  }, false);
+function alertAusgabe() {
+  alert("PhoneGap ist eine tolle Lösung!");
+}
+document.addEventListener("DOMContentLoaded", function () {
+alert("Ja, PhoneGap ist eine tolle Lösung für die Android-Entwicklung!");
+document.getElementById("magMich").
+addEventListener("click", alertAusgabe, false);
+}, false);
+</script>
+  <script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"></script>
+    <title>PhoneGap-Beispiel</title>
+  <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+  <script type="text/javascript" charset="utf-8">
+     function onLoad(){
+          document.addEventListener("deviceready", onDeviceReady, true);
+     }
+     function onDeviceReady(){
+          navigator.notification.alert("PhoneGap funktioniert!");
+     }
+  </script>
+  <div id="main">
+Android-Apps mit PhoneGap!<br>
+<button id="magMich">
+PhoneGap ist wirklich toll.
+</button>
+</div>
+  </head>
+  <body onload="onLoad();">
+       <h1>Herzlich Willkommen bei PhoneGap</h1>
+  </body>
+</html>
